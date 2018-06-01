@@ -1,0 +1,15 @@
+# Build folder and files #
+##########################
+builds/
+
+# Development folders and files #
+#################################
+dist/
+node_modules/
+
+# Log files & folders #
+#######################
+logs/
+*.log
+npm-debug.log*
+.npm
