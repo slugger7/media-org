@@ -3,30 +3,31 @@ import { render } from 'react-dom';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { Button } from '@material-ui/core';
 import './styles/App.css';
+import App from './app/App.jsx';
 
 const BasicExample = () => (
     <Router>
         <div>
             <Button variant="raised" color="primary">
                 This is a button
-            </Button>
-            <ul>
+                </Button>
+                <ul>
                 <li>
-                    <Link to="/">Home</Link>
+                <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <Link to="/about">About</Link>
+                <Link to="/about">About</Link>
                 </li>
                 <li>
-                    <Link to="/topics">Topics</Link>
+                <Link to="/topics">Topics</Link>
                 </li>
-            </ul>
+                </ul>
 
-            <hr />
+                <hr />
 
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/topics" component={Topics} />
+                <Route exact path="/" component={Home} />
+                <Route path="/about" component={About} />
+                <Route path="/topics" component={Topics} />
         </div>
     </Router>
 );
@@ -73,4 +74,4 @@ const Topic = ({ match }) => (
     </div>
 );
 
-render(<BasicExample />, document.getElementById('root'));
+render(<App />, document.getElementById('root'));

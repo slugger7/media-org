@@ -37,7 +37,12 @@
   "dependencies": {
     "@material-ui/core": "^1.1.0",
     "@material-ui/icons": "^1.1.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "classnames": "^2.2.5",
     "electron": "^1.8.6",
+    "jsxobj": "^1.1.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-router-dom": "^4.2.2"
@@ -45,6 +50,7 @@
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-react": "^6.24.1",
     "babili-webpack-plugin": "^0.1.2",
     "css-loader": "^0.28.11",
@@ -59,7 +65,7 @@
     "postcss-nested": "^3.0.0",
     "postcss-pxtorem": "^4.0.1",
     "style-loader": "^0.21.0",
-    "webpack": "^4.6.0",
+    "webpack": "^4.10.2",
     "webpack-cli": "^2.0.15",
     "webpack-dev-server": "^3.1.3"
   }

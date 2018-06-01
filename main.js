@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Import parts of electron to use
 const { app, BrowserWindow } = require('electron');
