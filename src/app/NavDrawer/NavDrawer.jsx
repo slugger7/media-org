@@ -16,7 +16,7 @@ import {
     ChevronRight,
     ChevronLeft
 } from '@material-ui/icons';
-import { drawerList } from './drawerList.jsx';
+import DrawerList from './DrawerList.jsx';
 import { styles } from './styles.js'
 
 class NavDrawer extends React.Component {
@@ -71,10 +71,10 @@ class NavDrawer extends React.Component {
                         </IconButton>
                     </div>
                     <Divider />
-                    <List>{drawerList}</List>
+                    <List><DrawerList /></List>
                 </Drawer>
                 <main className={classes.content}>
-                    <Typography noWrap>Hello world</Typography>
+                    {this.props.children}
                 </main>
             </div>
         );
